@@ -47,6 +47,10 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.jade$/,
+        loader: "jade"
+      },
+      {
         test: /\.pug$/,
         loader: 'pug'
       },
