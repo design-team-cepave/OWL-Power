@@ -47,6 +47,10 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.scss$/,
+        loader: 'style!css!sass?sourceMap'
+      },
+      {
         test: /\.jade$/,
         loader: "jade"
       },
